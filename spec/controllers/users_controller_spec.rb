@@ -1,10 +1,16 @@
-require 'rails_helper'
-
 RSpec.describe UsersController, type: :controller do
+  before(:each) do
+    @user = FactoryGirl.create(:user)
+    @user.confirm
+    sign_in @user
+    @item = FactoryGirl.create(:item)
+    @user.items << @item
+  end
+
 
   describe "GET #show" do
     it "returns http success" do
-      get :show
+      get :show, { id: @user.id }
       expect(response).to have_http_status(:success)
     end
   end
