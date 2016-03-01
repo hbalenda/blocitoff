@@ -10,7 +10,7 @@ RSpec.describe ItemsController, type: :controller do
 
   describe "POST create" do
     it "increases the number of items by one" do
-      expect{ post :create, user_id:@user.id, item: {name: @item.name} }.to change(Item,:count).by(1)
+      expect{ post :create, user_id: @user.id, item: {name: @item.name} }.to change(Item,:count).by(1)
     end
 
     it "returns http success" do
