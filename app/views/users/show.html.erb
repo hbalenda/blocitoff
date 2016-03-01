@@ -1,12 +1,11 @@
 <div class="container">
-  <h1>To Do List</h1>
-    <p class="text-warning">Getting things done since <%= @user.created_at.strftime("%b %d, %Y") %></p>
-  <div class="media">
-  <ul class="list-group">
-    <%= render @user.items %>
-  </ul>
-  </div>
+  <h2>Do these things:</h2>
+    <div class="table-responsive">
+      <table class="table table-hover ">
+        <%= render @user.items %>
+      </table>
+    </div>
   <div class='form-group'>
-    <%= render 'items/form', item: Item.new, user: @user %>
+      <%= render 'items/form', item: Item.new, user: @user %>
   </div>
 </div>
