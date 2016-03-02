@@ -561,6 +561,13 @@
         1,
         null
       ],
+      "/Users/hbalenda/code/blocitoff/app/helpers/item_helper.rb": [
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
       "/Users/hbalenda/code/blocitoff/app/helpers/welcome_helper.rb": [
         1,
         null
@@ -568,7 +575,6 @@
       "/Users/hbalenda/code/blocitoff/spec/controllers/items_controller_spec.rb": [
         1,
         1,
-        4,
         4,
         4,
         4,
@@ -650,7 +656,6 @@
         1,
         1,
         1,
-        1,
         null,
         null,
         null,
@@ -665,6 +670,7 @@
       ],
       "/Users/hbalenda/code/blocitoff/app/controllers/users_controller.rb": [
         1,
+        null,
         1,
         1,
         1,
@@ -714,6 +720,6 @@
         null
       ]
     },
-    "timestamp": 1456879044
+    "timestamp": 1456958684
   }
 }

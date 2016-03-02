@@ -1,7 +1,6 @@
 RSpec.describe UsersController, type: :controller do
   before(:each) do
     @user = FactoryGirl.create(:user)
-    @user.confirm
     sign_in @user
     @item = FactoryGirl.create(:item)
     @user.items << @item
