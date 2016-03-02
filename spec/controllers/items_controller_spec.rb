@@ -21,13 +21,13 @@ RSpec.describe ItemsController, type: :controller do
 
   describe "DELETE destroy" do
     it "deletes the comment" do
-      delete :destroy, user_id: @user.id, id: @item.id
+      delete :destroy, format: :js, user_id: @user.id, id: @item.id
       count = Item.where({id: @item.id}).count
       expect(count). to eq 0
     end
 
     it "returns http success" do
-      delete :destroy, user_id: @user.id, id: @item.id
+      delete :destroy, format: :js, user_id: @user.id, id: @item.id
       expect(response).to have_http_status(:success)
     end
   end

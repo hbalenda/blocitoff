@@ -13,7 +13,14 @@ class ItemsController < ApplicationController
     @item = @user.items.find(params[:id])
 
     if @item.destroy
-      redirect_to [@user]
+      flash[:notice] = "Complete!"
+    else
+      flash[:alert] = "There was an error checking off your task. Please try again."
+    end
+
+    respond_to do |format|
+      format.html
+      format.js
     end
   end
 
