@@ -561,13 +561,6 @@
         1,
         null
       ],
-      "/Users/hbalenda/code/blocitoff/app/helpers/item_helper.rb": [
-        1,
-        1,
-        0,
-        null,
-        null
-      ],
       "/Users/hbalenda/code/blocitoff/app/helpers/welcome_helper.rb": [
         1,
         null
@@ -710,6 +703,10 @@
       "/Users/hbalenda/code/blocitoff/app/models/item.rb": [
         1,
         1,
+        null,
+        1,
+        0,
+        null,
         null
       ],
       "/Users/hbalenda/code/blocitoff/spec/models/user_spec.rb": [
@@ -720,6 +717,6 @@
         null
       ]
     },
-    "timestamp": 1456958684
+    "timestamp": 1456968795
   }
 }
