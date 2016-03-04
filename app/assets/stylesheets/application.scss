@@ -17,3 +17,8 @@
  @import "bootswatch/paper/variables";
  @import "bootstrap";
  @import "bootswatch/paper/bootswatch";
+
+.table a:link { 
+  text-decoration: none;
+  color: white;
+}

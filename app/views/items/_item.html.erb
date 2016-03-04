@@ -1,6 +1,6 @@
 <tbody>
   <%= content_tag :tr, class: "info", id: "item-#{item.id}" do %>
-    <td><%= link_to '', [current_user, item], method: :delete, class: 'glyphicon glyphicon-ok', remote: true %></td>
+    <td><%= link_to '', [current_user, item], method: :delete, class: 'glyphicon glyphicon-ok white', remote: true %></td>
     <td><%= item.name %></td>
     <td><%= "#{item.time_left} days left" %></td>
   <% end %>
