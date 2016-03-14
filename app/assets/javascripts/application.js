@@ -16,15 +16,10 @@
 //= require bootstrap
 //= require_tree .
 var blocmetrics = {};
-  blocmetrics.report = function(eventName) {
-    //Create an event JSON object to send to analytics service.
-    var event = {event: { name: eventName }};
-    // Initialize a new XMLHttpRequest aka AJAX request.
-    var request = new XMLHttpRequest();
-    // Set HTTP method to POST/ the url of events endpoint, and allow the request to run asynchronously.
-    request.open("POST", "http://localhost:3000/api/events", true);
-    // Tells API::EventsController to process the request as JSON.
-    request.setRequestHeader('Content-Type', 'application/json');
-    // Send request
-    request.send(JSON.stringify(event));
-  };
+blocmetrics.report = function(eventName){
+  var event = { name: eventName }};
+  var request = new XMLHttpRequest();
+  request.open("POST","http://localhost:3001/api/events",true);
+  request.setRequestHeader('Content-Type','application/json');
+  request.send(JSON.stringify(event));
+};
