@@ -1,7 +1,9 @@
-<%= form_for [user, item], :html => {:class => "form-inline"}  do |f| %>
-  <div class="form-group">
-    <%= f.text_field :name, class: 'form-control', placeholder: "Enter a new task" %>
-    <%= f.text_field :time_remaining, class: 'form-control', placeholder: "Time to complete (in days)"%>
-    <%= f.submit "Submit Task", class: 'btn btn-info pull-right' %>
-  </div>
-<% end %>
+<div class = "container">
+  <%= form_for [user, item], :html => {:class => "form-inline"}  do |f| %>
+    <div class="form-group">
+      <%= f.text_field :name, class: 'form-control', placeholder: "Enter a new task" %>
+      <%= f.text_field :time_remaining, class: 'form-control', placeholder: "Time to complete (in days)"%>
+      <%= f.submit "Submit Task", class: 'btn btn-info pull-right' %>
+    </div>
+  <% end %>
+</div>

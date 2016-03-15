@@ -17,7 +17,7 @@
 //= require_tree .
 var blocmetrics = {};
 blocmetrics.report = function(eventName){
-  var event = { name: eventName }};
+  var event = { name: eventName };
   var request = new XMLHttpRequest();
   request.open("POST","http://localhost:3001/api/events",true);
   request.setRequestHeader('Content-Type','application/json');
