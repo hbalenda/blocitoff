@@ -21,7 +21,7 @@ gem 'turbolinks'
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
 gem 'figaro'
-gem 'pry'
+gem 'pry-rails'
 gem 'devise'
 
 
